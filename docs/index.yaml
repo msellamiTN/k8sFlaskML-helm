@@ -3,7 +3,7 @@ entries:
   mymlflaskapichart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-11T00:56:09.6491508+02:00"
+    created: "2022-06-11T01:07:09.4231127+02:00"
     description: A Helm chart for Kubernetes
     digest: 75e4cf91d86f23d00950283c2cd99a436fcbae4673767954eb10f6c164c57f4c
     name: mymlflaskapichart
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://github.com/msellamiTN/k8sFlaskML-helm/mymlflaskapichart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-11T00:56:09.6486409+02:00"
+generated: "2022-06-11T01:07:09.4224406+02:00"
