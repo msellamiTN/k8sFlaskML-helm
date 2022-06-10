@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mymifalskapisvc
+  labels:
+    run: {{ .Chart.Name }}
+
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.internalPort }}
+      nodePort: {{ .Values.service.nodeport }}
+      protocol: TCP
+      targetPort: {{ .Values.service.externalPort }}
+  selector:
+      run: {{ .Chart.Name }}

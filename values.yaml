@@ -1,0 +1,21 @@
+# Default values for lets-chat.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+image:
+  repository: msellami/sklearn-flask-docker
+  tag: latest
+  pullPolicy: Always
+service:
+  name: myMLApps
+  tier: frontend
+  type: NodePort
+  internalPort: 80
+  externalPort: 80
+  nodeport: 31000
+resources:
+  limits:
+    memory: 512Mi
+  requests:
+    memory: 128Mi
+ServiceAccount : {}
